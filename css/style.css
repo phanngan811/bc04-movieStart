@@ -1,0 +1,172 @@
+
+header{
+    position: absolute;
+    z-index: 1;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 5%;
+}
+
+header nav ul{
+    border-bottom: 1px solid #ffffff4f;
+}
+header nav ul li{
+    position: relative;
+    padding: 0 20px;
+}
+header nav ul li.active a::after{
+    content: "";
+    display: block;
+    width: 100%;
+    height: 2px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background: linear-gradient(to right, #fbbd61, #ec7532);
+}
+header nav ul li a::after{
+    content: "";
+    display: block;
+    width: 0;
+    height: 2px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background: linear-gradient(to right, #fbbd61, #ec7532);
+    transition: all .5s;
+    box-shadow: 0 0 20px 0 #fbbd61;
+}
+header nav ul li:hover a::after{
+    width: 100%;
+}
+
+
+
+.carousel-inner .carousel-item{
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 600px;
+    padding-top: 250px;
+}
+
+.carousel-inner .item1{
+    background-image:url("./../img/hero-1.jpg");
+   
+}
+.carousel-inner .item2{
+    background-image:url("./../img/hero-2.jpg");
+    
+}
+.carousel-inner .item3{
+    background-image:url("./../img/hero-3.jpg");
+    
+}
+.carousel-indicators li{
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    border: 1px solid white;
+    background: transparent;
+}
+.carousel-item-content h3 {
+    letter-spacing: 2px;
+    font-size: 12px;
+    color: #fbbd61;
+}
+.carousel-item-content h1{
+        font-size: 52px;
+    font-weight: 300;
+    letter-spacing: 3px;
+        color: white;
+}
+.carousel-item-content p{
+    color: white;
+
+}
+.carousel-item-content span{
+    
+}
+.carousel-indicators li.active{
+    background-color: white;
+}
+.carousel-indicators{
+    justify-content: flex -start;
+    bottom: 50px;
+}
+
+.btn-trailer{
+    padding: 15px 50px;
+    border-radius: 30px;
+    background: linear-gradient(45deg, #fbbd61, #ec7532);
+    border: none;
+    color: white;
+    position: relative;
+    overflow: hidden;
+}
+
+.btn-trailer::after{
+    content: "";
+    display: block;
+    width: 0%;
+    height: 100%;
+    background-color: #ec7532;
+    position: absolute;
+    top: 0;
+    left: -15%;
+    transform: skewX(30deg);
+    transition: all 0.5s;
+}
+.btn-trailer:hover::after{
+    width: 120%;
+}
+.btn-trailer span{
+    position: relative;
+    z-index: 2;
+}
+#new-in{
+    padding: 60px 0;
+}
+.title-heading{
+    border-bottom: 1px solid #0000001f;
+    padding-bottom: 20px;
+    position: relative;
+}
+.title-heading::after{
+    content: "";
+    display: block;
+    height: 5px;
+    width: 20%;
+    background: linear-gradient(to right, #fbbd61, #ec7532);
+    position: absolute;
+    bottom: -1px;
+    left: 0;
+}
+
+
+.slick-prev:before, .slick-next:before{
+    color: black;
+}
+
+/*comming soon */
+
+#comming-soon{
+    margin-top: 5rem ;
+    background-color: lightblue;
+    height: 500px;
+    padding-top: 5rem;
+    position: relative;
+
+}
+.carousel-indicators
+{
+    top: 507px;
+}
+
+.bg{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
